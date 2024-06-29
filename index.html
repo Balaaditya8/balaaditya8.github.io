@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Balaaditya Mukundan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#tech-stack">Skills</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Balaaditya Mukundan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/bala_photo.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Balaaditya Mukundan</h1>
+        <p class="section__text__p2">Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/bala_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/balaaditya-mukundan'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Balaaditya8'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-text-container">
+            <p>
+              Welcome to my page.
+              I’m Balaaditya, currently pursuing MS in Computer Science and Engineering at University of California San Diego. I’m passionate about machine learning and artificial intelligence, and I also enjoy working on full stack development to create end-to-end systems. I've worked on projects involving large language models, diffusion models, and computer vision, utilizing technologies like Flask, Flutter, FastAPI etc. My goal is to integrate diverse technologies to build innovative and impactful solutions.
+              <br>
+              <br>
+              My interests include:
+              <br>
+              &emsp;Machine Learning
+              <br>
+              &emsp;Artificial Intelligence
+              <br>
+              &emsp;Full Stack Development
+              <br>
+              &emsp;Computer Vision
+              <br>
+              &emsp;Generative AI
+              <br>
+              &emsp;Large Language Models (LLMs)
+              <br>
+              &emsp;Diffusion Models  
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#education'"
+      />
+    </section>
+
+    <!-- New Education Section -->
+    <section id="education">
+      <p class="section__text__p1">My Formal Background</p>
+      <h1 class="title">Education</h1>
+      <div class="education-details-container">
+        <div class="education-item">
+          <img
+            src="./assets/UCSD_Seal.png"
+            alt="XYZ University"
+            class="education-icon"
+          />
+          <div>
+            <h2>Master of Science in Computer Science and Engineering</h2>
+            <p>University of California San Diego</p>
+            <p>2024 - 2026</p>
+          </div>
+        </div>
+        <div class="education-item">
+          <img
+            src="./assets/ceg.png"
+            alt="ABC University"
+            class="education-icon"
+          />
+          <div>
+            <h2>Bachelor of Engineering in Computer Science and Engineering</h2>
+            <p>College of Engineering Guindy, Anna University</p>
+            <p>2020 - 2024</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">My Professional Journey</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="experience-item">
+          <img src="./assets/ceg.png" alt="Company Photo" class="experience-icon" />
+          <div>
+            <h2>Research Intern</h2>
+            <p>College of Engineering Guindy, Anna University</p>
+            <p>Aug. 2023 - Dec. 2023</p>
+            <ul>
+              <li>Contributed to the development a fine-tuned Large Language Model based on Meta's Llama-2-7B model and 13B model.</li>
+              <li>Trained on a high-quality STEM dataset to achieve superior results with cost-effective methods.</li>
+              <li>Evaluated model's performance through benchmarking on various general reasoning datasets.</li>
+              <li>Demonstrated that the model outperforms several open-source LLMs and rivals some expensive closed-source models.</li>
+              <li>Investigated the impact of incorporating STEM-specific datasets on enhancing general reasoning in LLMs.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <img src="./assets/amazon.png" alt="Company Photo" class="experience-icon" />
+          <div>
+            <h2>SDE Intern</h2>
+            <p>Amazon, Bangalore</p>
+            <p>June 2023 - Aug. 2023</p>
+            <ul>
+              <li>Improved existing internal applications through simplification and automation.</li>
+              <li>Created several APIs to simplify permission management using Java Sping Boot</li>
+              <li>Worked with Ruby Rails, Java, AWS lambdas and DynamoDB.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <img src="./assets/ceg.png" alt="Company Photo" class="experience-icon" />
+          <div>
+            <h2>Research Intern</h2>
+            <p>College of Engineering Guindy, Anna University</p>
+            <p>Nov. 2022 - May 2023</p>
+            <ul>
+              <li>Utilized diffusion models like Stable Diffusion in combination with Augmented Reality.</li>
+              <li>Developed a method to generate short videos based on given vocal prompts in AR by creating sequences of images.</li>
+              <li>Explored the integration of AR with AI-generated content to enhance visualization</li>
+              <li>Awaiting funding results for hardware implementation to further advance the project</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <img src="./assets/ceg.png" alt="Company Photo" class="experience-icon" />
+          <div>
+            <h2>Research Intern</h2>
+            <p>College of Engineering Guindy, Anna University</p>
+            <p>June 2022 - Oct. 2022</p>
+            <ul>
+              <li>Research aimed at enhancing medical image diagnosis using Deep Learning models and effect of Adversarial attack.</li>
+              <li>Fine-tuned the EfficientNet-B0 model to develop a highly accurate system.</li>
+              <li>Implemented and studied the DeepFool attack, and analyzed the effects of adversarial training to defend it.</li>
+              <li>Presented the study virtually in ICCT 23 IEEE conference.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+        <div class="project-item">
+          <img src="./assets/TAVGEN.png" alt="TAVGen" class="project-img" />
+          <div class="project-details">
+            <h2 class="project-title">TAVGen- Text-to-AudioVisual Generation</h2>
+            <p>This project focuses on developing a custom Text-Code-Video methodology to streamline video generation by utilizing code intermediation with large language models (LLMs). The main objective is to reduce the computational complexity involved in creating educational videos, particularly for math and physics concepts.</p>
+            <br>
+            <p>The approach involves several key components:</p>
+            <ul>
+              <li>
+                  <strong>Fine-tuning an LLM:</strong> The LLM was specifically trained to explain math and physics concepts. It generates code using the Manim library, which is then used to create animations illustrating these concepts.
+              </li>
+              <li>
+                  <strong>Voice Cloning TTS Engine:</strong> A voice cloning Text-to-Speech (TTS) engine was developed using Tacotron 2. This engine produces natural-sounding audio explanations to accompany the animations.
+              </li>
+              <li>
+                  <strong>Combining Video and Audio:</strong> The generated video and audio are integrated to produce cohesive, multi-modal educational content.
+              </li>
+              <li>
+                  <strong>End-to-End System:</strong> An end-to-end system was built using a Flask app and APIs. This system allows users to generate educational content by simply providing prompts, which invoke the necessary functions to create the final video.
+              </li>
+          </ul>
+          <br>
+          <p>
+              Overall, this project offers an efficient solution for creating high-quality, informative videos that aid in the understanding of complex math and physics concepts.
+          </p>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="./assets/AR.jpg" alt="Project 2" class="project-img" />
+          <div class="project-details">
+            <h2 class="project-title">ViVid</h2>
+            <p>
+              This project involved using various technologies such as Flutter, Python, AR, Stable Diffusion, and Whisper. The main aim was to create a Voice-to-Video system that leverages advanced machine learning models and augmented reality.
+          </p>
+          <br>
+          <p>
+              Key components of the project include:
+          </p>
+          <ul>
+              <li>
+                  <strong>Voice-to-Video System:</strong> A system was built using Diffusion Models, specifically Stable Diffusion, to convert voice inputs into video outputs.
+              </li>
+              <li>
+                  <strong>Speech-to-Text Integration:</strong> The Whisper model, a state-of-the-art Speech-to-Text model, was integrated to transcribe voice inputs accurately.
+              </li>
+              <li>
+                  <strong>App Development:</strong> An application was developed using Flutter to automate the entire voice-to-video process. This app also featured a prototype for displaying the generated videos in real environments using Augmented Reality (AR).
+              </li>
+              <li>
+                  <strong>Funding:</strong> The project is currently awaiting funding results for hardware devices to further enhance its capabilities.
+              </li>
+          </ul>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="./assets/malaria.png" alt="Project 3" class="project-img" />
+          <div class="project-details">
+            <h2 class="project-title">AUTOMATED DETECTION OF MALARIA IMPLEMENTED BY DEEP LEARNING</h2>
+            <p>We propose a deep learning-based approach for automating the detection of malaria-infected red blood cells, crucial for combatting this life-threatening disease. Traditional methods, like microscopic examination, require trained personnel and are time-intensive. Our solution leverages convolutional neural networks (CNNs) to analyze microscopic blood smear images and classify them as infected or uninfected. By significantly reducing diagnosis time and enhancing accuracy, our method aims to provide a reliable and efficient tool for malaria diagnosis, particularly beneficial in resource-limited settings.</p>
+            <br>
+            <p>
+              Key components of the project include:
+            </p>
+            <ul>
+              <li>
+                  <strong>CNN Utilization:</strong> We employ convolutional neural networks (CNNs) to extract features from microscopic images of blood smears and classify them as infected or uninfected.
+              </li>
+              <li>
+                  <strong>Dataset and Evaluation:</strong> The model is trained and evaluated on a publicly available dataset of malaria-infected blood smear images, achieving high accuracy in classification tasks.
+              </li>
+              <li>
+                  <strong>Impact:</strong> This automated approach reduces the dependence on human intervention in malaria diagnosis, offering a faster and more accurate alternative to traditional methods.
+              </li>
+          </ul>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="./assets/bb.png" alt="Project 3" class="project-img" />
+          <div class="project-details">
+            <h2 class="project-title">Blood Bank Management</h2>
+            <p>The Blood Bank Management System is a web-based application designed to streamline blood management and donation services. It facilitates the storage, processing, retrieval, and analysis of administrative and inventory data within blood banks.</p>
+            <br>
+            <p>Implementation Details</p>
+            <ul>
+              <li><strong>Front End:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+              <li><strong>Backend:</strong> Flask (Python)</li>
+              <li><strong>Database:</strong> MySQL</li>
+            </ul>
+            <br>
+            <p>The system supports three main user flows:</p>
+            <br>
+            <p>Admin Flow:</p>
+            <ul >
+                <li>The admin manages employee registration and oversees operations.</li>
+            </ul>
+            <p>Employee Flow:</p>
+            <ul>
+                <li>Employees add donor and blood donation details to the database.</li>
+                <li>They manage blood requests and monitor inventory levels.</li>
+            </ul>
+            <p>Normal User Flow:</p>
+            <ul>
+                <li>Normal users can request blood and check availability.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#tech-stack'"
+      />
+    </section>
+
+    <section id="tech-stack">
+      <p class="section__text__p1">Scroll through my</p>
+      <h1 class="title">Skills</h1>
+      <div class="tech-stack-container">
+        <div class="tech-item">
+          <img src="./assets/python.webp" alt="Tech 1" class="tech-img" />
+          <p class="tech-name">Python</p>
+        </div>
+        <div class="tech-item">
+          <img src="./assets/java.webp" alt="Tech 2" class="tech-img" />
+          <p class="tech-name">Java</p>
+        </div>
+        <div class="tech-item">
+          <img src="./assets/flask.webp" alt="Tech 3" class="tech-img" />
+          <p class="tech-name">Flask</p>
+        </div>
+        <div class="tech-item">
+          <img src="./assets/flutter.jpg" alt="Tech 3" class="tech-img" />
+          <p class="tech-name">Flutter</p>
+        </div>
+        <div class="tech-item">
+          <img src="./assets/pytorch.png" alt="Tech 3" class="tech-img" />
+          <p class="tech-name">Pytorch</p>
+        </div>
+        <div class="tech-item">
+          <img src="./assets/numpy.png" alt="Tech 3" class="tech-img" />
+          <p class="tech-name">Numpy</p>
+        </div>
+        <div class="tech-item">
+          <img src="./assets/html.jpg" alt="Tech 3" class="tech-img" />
+          <p class="tech-name">HTML</p>
+        </div>
+        <div class="tech-item">
+          <img src="./assets/cpp.png" alt="Tech 3" class="tech-img" />
+          <p class="tech-name">C++</p>
+        </div>
+        <div class="tech-item">
+          <img src="./assets/fastapi.png" alt="Tech 3" class="tech-img" />
+          <p class="tech-name">FastAPI</p>
+        </div>
+        <!-- Add more tech items as needed -->
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#publications'"
+      />
+    </section>
+    
+    <section id="publications">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Publications</h1>
+      <div class="publications-container">
+        <div class="publication-item">
+          <h2 class="publication-title"> Perry - Building Generalist Reasoning Models Through Supervised Fine Tuning on STEM Dataset</h2>
+          <p>Pending Publication</p>
+          <a href="" target="_blank">Read more</a>
+        </div>
+        <div class="publication-item">
+          <h2 class="publication-title">Analysis of the Effect of Adversarial Training in Defending EfficientNet-B0 Model from DeepFool Attack</h2>
+          <p>IEEE - 2023 3rd International Conference on Intelligent Communication and Computational Techniques (ICCT) · Mar 27, 2023.</p>
+          <a href="https://ieeexplore.ieee.org/document/10075774" target="_blank">Read more</a>
+        </div>
+        <!-- Add more publication items as needed -->
+      </div>
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:balaaditya8@gmail.com">balaaditya8@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/balaaditya-mukundan">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tech-stack">Skills</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Balaaditya Mukundan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
