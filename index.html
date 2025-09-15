@@ -1,510 +1,948 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Balaaditya Mukundan</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#tech-stack">Skills</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Balaaditya Mukundan</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/bala_photo.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Balaaditya Mukundan</h1>
-        <p class="section__text__p2">Student</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/bala_resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/balaaditya-mukundan'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Balaaditya8'"
-          />
-          <img
-            src="./assets/hg.png"
-            alt="My HF profile"
-            class="icon"
-            onclick="location.href='https://huggingface.co/Balaaditya'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-text-container">
-            <p>
-              Welcome to my page.
-              I’m Balaaditya, currently pursuing MS in Computer Science and Engineering at University of California San Diego. I’m passionate about machine learning and artificial intelligence, and I also enjoy working on full stack development to create end-to-end systems. I've worked on projects involving large language models, diffusion models, and computer vision, utilizing technologies like Flask, Flutter, FastAPI etc. My goal is to integrate diverse technologies to build innovative and impactful solutions.
-              <br>
-              <br>
-              My interests include:
-              <br>
-              &emsp;Machine Learning
-              <br>
-              &emsp;Artificial Intelligence
-              <br>
-              &emsp;Full Stack Development
-              <br>
-              &emsp;Computer Vision
-              <br>
-              &emsp;Generative AI
-              <br>
-              &emsp;Large Language Models (LLMs)
-              <br>
-              &emsp;Diffusion Models  
-              <br>
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#education'"
-      />
-    </section>
-
-    <!-- New Education Section -->
-    <section id="education">
-      <p class="section__text__p1">My Formal Background</p>
-      <h1 class="title">Education</h1>
-      <div class="education-details-container">
-        <div class="education-item">
-          <img
-            src="./assets/UCSD_Seal.png"
-            alt="XYZ University"
-            class="education-icon"
-          />
-          <div>
-            <h2>Master of Science in Computer Science and Engineering</h2>
-            <p>University of California San Diego</p>
-            <p>2024 - 2026</p>
-          </div>
-        </div>
-        <div class="education-item">
-          <img
-            src="./assets/ceg.png"
-            alt="ABC University"
-            class="education-icon"
-          />
-          <div>
-            <h2>Bachelor of Engineering in Computer Science and Engineering</h2>
-            <p>College of Engineering Guindy, Anna University</p>
-            <p>2020 - 2024</p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#experience'"
-      />
-    </section>
-
-    <section id="experience">
-      <p class="section__text__p1">My Professional Journey</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="experience-item">
-          <img src="./assets/ceg.png" alt="Company Photo" class="experience-icon" />
-          <div>
-            <h2>Machine Learning Research Intern</h2>
-            <p>College of Engineering Guindy, Anna University</p>
-            <p>Aug. 2023 - Dec. 2023</p>
-            <ul>
-              <li>Contributed to the development a fine-tuned Large Language Model based on Meta's Llama-2-7B model and 13B model.</li>
-              <li>Trained on a high-quality STEM dataset to achieve superior results with cost-effective methods.</li>
-              <li>Evaluated model's performance through benchmarking on various general reasoning datasets.</li>
-              <li>Demonstrated that the model outperforms several open-source LLMs and rivals some expensive closed-source models.</li>
-              <li>Investigated the impact of incorporating STEM-specific datasets on enhancing general reasoning in LLMs.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience-item">
-          <img src="./assets/amazon.png" alt="Company Photo" class="experience-icon" />
-          <div>
-            <h2>SDE Intern</h2>
-            <p>Amazon, Bangalore</p>
-            <p>June 2023 - Aug. 2023</p>
-            <ul>
-              <li>Improved existing internal applications through simplification and automation.</li>
-              <li>Created several APIs to simplify permission management using Java Sping Boot</li>
-              <li>Worked with Ruby Rails, Java, AWS lambdas and DynamoDB.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience-item">
-          <img src="./assets/ceg.png" alt="Company Photo" class="experience-icon" />
-          <div>
-            <h2>Machine Learning Research Intern</h2>
-            <p>College of Engineering Guindy, Anna University</p>
-            <p>Nov. 2022 - May 2023</p>
-            <ul>
-              <li>Utilized diffusion models like Stable Diffusion in combination with Augmented Reality.</li>
-              <li>Developed a method to generate short videos based on given vocal prompts in AR by creating sequences of images.</li>
-              <li>Explored the integration of AR with AI-generated content to enhance visualization</li>
-              <li>Awaiting funding results for hardware implementation to further advance the project</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience-item">
-          <img src="./assets/ceg.png" alt="Company Photo" class="experience-icon" />
-          <div>
-            <h2>Machine Learning  Research Intern</h2>
-            <p>College of Engineering Guindy, Anna University</p>
-            <p>June 2022 - Oct. 2022</p>
-            <ul>
-              <li>Research aimed at enhancing medical image diagnosis using Deep Learning models and effect of Adversarial attack.</li>
-              <li>Fine-tuned the EfficientNet-B0 model to develop a highly accurate system.</li>
-              <li>Implemented and studied the DeepFool attack, and analyzed the effects of adversarial training to defend it.</li>
-              <li>Presented the study virtually in ICCT 23 IEEE conference.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
+    <title>Balaaditya Mukundan | Portfolio</title>
     
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="projects-container">
-        <div class="project-item">
-          <img src="./assets/ollama-chat.png" alt="Ollama" class="project-img" />
-          <div class="project-details">
-            <h2 class="project-title">Local RAG-DOC-Chat</h2>
-            <p>This project focuses on developing a <strong>document-based Question Answering system</strong> using <strong>Local LLMs</strong> (Large Language Models). It allows users to upload documents (e.g., PDFs) and ask questions, with the system providing accurate and concise answers based on the document's content.</p>
-            <br>
-            <p>The approach involves several key components:</p>
-            <ul>
-              <li>
-                <strong>Document Processing:</strong> The system processes uploaded documents by splitting them into smaller chunks, generating embeddings, and storing them in a vector database for efficient retrieval.
-              </li>
-              <li>
-                <strong>Local LLM Integration:</strong> The system uses a local LLM (e.g., Mistral via Ollama) to generate answers based on the retrieved document chunks. This ensures privacy and eliminates the need for external APIs.
-              </li>
-              <li>
-                <strong>Retrieval-Augmented Generation (RAG):</strong> The RAG pipeline combines document retrieval with LLM-based generation to provide accurate and context-aware answers.
-              </li>
-              <li>
-                <strong>User-Friendly Interface:</strong> A Streamlit-based web interface allows users to upload documents, ask questions, and view answers in a conversational format.
-              </li>
-            </ul>
-            <br>
-            <p>
-              Overall, this project offers an efficient and privacy-preserving solution for document-based question answering, making it ideal for educational, research, and professional use cases.
-            </p>
-          </div>
-        </div>
-        <div class="project-item">
-          <img src="./assets/rag-doc.png" alt="rag-chat" class="project-img" />
-          <div class="project-details">
-            <h2 class="project-title">RAG-DOC-Chat</h2>
-              <p>This project focuses on developing a <strong>document-based Question Answering system</strong> using the <strong>Groq API</strong> and <strong>Retrieval-Augmented Generation (RAG)</strong>. It allows users to upload documents (e.g., PDFs) and ask questions, with the system providing accurate and concise answers based on the document's content.</p>
-              <br>
-              <p>The approach involves several key components:</p>
-              <ul>
-                <li>
-                  <strong>Document Processing:</strong> The system processes uploaded documents by splitting them into smaller chunks, generating embeddings, and storing them in a vector database for efficient retrieval.
-                </li>
-                <li>
-                  <strong>Groq API Integration:</strong> The system uses the Groq API to leverage high-performance LLMs (e.g., LLaMA 3 or Mixtral) for generating answers based on the retrieved document chunks. This ensures fast and accurate responses.
-                </li>
-                <li>
-                  <strong>Retrieval-Augmented Generation (RAG):</strong> The RAG pipeline combines document retrieval with LLM-based generation to provide context-aware and precise answers.
-                </li>
-                <li>
-                  <strong>User-Friendly Interface:</strong> A Streamlit-based web interface allows users to upload documents, ask questions, and view answers in a conversational format.
-                </li>
-              </ul>
-              <br>
-              <p>
-                Overall, this project offers a fast, scalable, and efficient solution for document-based question answering, making it ideal for educational, research, and professional use cases.
-              </p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <img src="./assets/TAVGEN.png" alt="TAVGen" class="project-img" />
-          <div class="project-details">
-            <h2 class="project-title">TAVGen- Text-to-AudioVisual Generation</h2>
-            <p>This project focuses on developing a custom Text-Code-Video methodology to streamline video generation by utilizing code intermediation with large language models (LLMs). The main objective is to reduce the computational complexity involved in creating educational videos, particularly for math and physics concepts.</p>
-            <br>
-            <p>The approach involves several key components:</p>
-            <ul>
-              <li>
-                  <strong>Fine-tuning an LLM:</strong> The LLM was specifically trained to explain math and physics concepts. It generates code using the Manim library, which is then used to create animations illustrating these concepts.
-              </li>
-              <li>
-                  <strong>Voice Cloning TTS Engine:</strong> A voice cloning Text-to-Speech (TTS) engine was developed using Tacotron 2. This engine produces natural-sounding audio explanations to accompany the animations.
-              </li>
-              <li>
-                  <strong>Combining Video and Audio:</strong> The generated video and audio are integrated to produce cohesive, multi-modal educational content.
-              </li>
-              <li>
-                  <strong>End-to-End System:</strong> An end-to-end system was built using a Flask app and APIs. This system allows users to generate educational content by simply providing prompts, which invoke the necessary functions to create the final video.
-              </li>
-          </ul>
-          <br>
-          <p>
-              Overall, this project offers an efficient solution for creating high-quality, informative videos that aid in the understanding of complex math and physics concepts.
-          </p>
-          </div>
-        </div>
-        <div class="project-item">
-          <img src="./assets/AR.jpg" alt="Project 2" class="project-img" />
-          <div class="project-details">
-            <h2 class="project-title">ViVid</h2>
-            <p>
-              This project involved using various technologies such as Flutter, Python, AR, Stable Diffusion, and Whisper. The main aim was to create a Voice-to-Video system that leverages advanced machine learning models and augmented reality.
-          </p>
-          <br>
-          <p>
-              Key components of the project include:
-          </p>
-          <ul>
-              <li>
-                  <strong>Voice-to-Video System:</strong> A system was built using Diffusion Models, specifically Stable Diffusion, to convert voice inputs into video outputs.
-              </li>
-              <li>
-                  <strong>Speech-to-Text Integration:</strong> The Whisper model, a state-of-the-art Speech-to-Text model, was integrated to transcribe voice inputs accurately.
-              </li>
-              <li>
-                  <strong>App Development:</strong> An application was developed using Flutter to automate the entire voice-to-video process. This app also featured a prototype for displaying the generated videos in real environments using Augmented Reality (AR).
-              </li>
-              <li>
-                  <strong>Funding:</strong> The project is currently awaiting funding results for hardware devices to further enhance its capabilities.
-              </li>
-          </ul>
-          </div>
-        </div>
-        <div class="project-item">
-          <img src="./assets/malaria.png" alt="Project 3" class="project-img" />
-          <div class="project-details">
-            <h2 class="project-title">AUTOMATED DETECTION OF MALARIA IMPLEMENTED BY DEEP LEARNING</h2>
-            <p>We propose a deep learning-based approach for automating the detection of malaria-infected red blood cells, crucial for combatting this life-threatening disease. Traditional methods, like microscopic examination, require trained personnel and are time-intensive. Our solution leverages convolutional neural networks (CNNs) to analyze microscopic blood smear images and classify them as infected or uninfected. By significantly reducing diagnosis time and enhancing accuracy, our method aims to provide a reliable and efficient tool for malaria diagnosis, particularly beneficial in resource-limited settings.</p>
-            <br>
-            <p>
-              Key components of the project include:
-            </p>
-            <ul>
-              <li>
-                  <strong>CNN Utilization:</strong> We employ convolutional neural networks (CNNs) to extract features from microscopic images of blood smears and classify them as infected or uninfected.
-              </li>
-              <li>
-                  <strong>Dataset and Evaluation:</strong> The model is trained and evaluated on a publicly available dataset of malaria-infected blood smear images, achieving high accuracy in classification tasks.
-              </li>
-              <li>
-                  <strong>Impact:</strong> This automated approach reduces the dependence on human intervention in malaria diagnosis, offering a faster and more accurate alternative to traditional methods.
-              </li>
-          </ul>
-          </div>
-        </div>
-        <div class="project-item">
-          <img src="./assets/bb.png" alt="Project 3" class="project-img" />
-          <div class="project-details">
-            <h2 class="project-title">Blood Bank Management</h2>
-            <p>The Blood Bank Management System is a web-based application designed to streamline blood management and donation services. It facilitates the storage, processing, retrieval, and analysis of administrative and inventory data within blood banks.</p>
-            <br>
-            <p>Implementation Details</p>
-            <ul>
-              <li><strong>Front End:</strong> HTML, CSS, JavaScript, Bootstrap</li>
-              <li><strong>Backend:</strong> Flask (Python)</li>
-              <li><strong>Database:</strong> MySQL</li>
-            </ul>
-            <br>
-            <p>The system supports three main user flows:</p>
-            <br>
-            <p>Admin Flow:</p>
-            <ul >
-                <li>The admin manages employee registration and oversees operations.</li>
-            </ul>
-            <p>Employee Flow:</p>
-            <ul>
-                <li>Employees add donor and blood donation details to the database.</li>
-                <li>They manage blood requests and monitor inventory levels.</li>
-            </ul>
-            <p>Normal User Flow:</p>
-            <ul>
-                <li>Normal users can request blood and check availability.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#tech-stack'"
-      />
-    </section>
-
-    <section id="tech-stack">
-      <p class="section__text__p1">Scroll through my</p>
-      <h1 class="title">Skills</h1>
-      <div class="tech-stack-container">
-        <div class="tech-item">
-          <img src="./assets/python.webp" alt="Tech 1" class="tech-img" />
-          <p class="tech-name">Python</p>
-        </div>
-        <div class="tech-item">
-          <img src="./assets/java.webp" alt="Tech 2" class="tech-img" />
-          <p class="tech-name">Java</p>
-        </div>
-        <div class="tech-item">
-          <img src="./assets/flask.webp" alt="Tech 3" class="tech-img" />
-          <p class="tech-name">Flask</p>
-        </div>
-        <div class="tech-item">
-          <img src="./assets/flutter.jpg" alt="Tech 3" class="tech-img" />
-          <p class="tech-name">Flutter</p>
-        </div>
-        <div class="tech-item">
-          <img src="./assets/pytorch.png" alt="Tech 3" class="tech-img" />
-          <p class="tech-name">Pytorch</p>
-        </div>
-        <div class="tech-item">
-          <img src="./assets/numpy.png" alt="Tech 3" class="tech-img" />
-          <p class="tech-name">Numpy</p>
-        </div>
-        <div class="tech-item">
-          <img src="./assets/html.jpg" alt="Tech 3" class="tech-img" />
-          <p class="tech-name">HTML</p>
-        </div>
-        <div class="tech-item">
-          <img src="./assets/cpp.png" alt="Tech 3" class="tech-img" />
-          <p class="tech-name">C++</p>
-        </div>
-        <div class="tech-item">
-          <img src="./assets/fastapi.png" alt="Tech 3" class="tech-img" />
-          <p class="tech-name">FastAPI</p>
-        </div>
-        <div class="tech-item">
-          <img src="./assets/react.png" alt="Tech 3" class="tech-img" />
-          <p class="tech-name">React.JS</p>
-        </div>
-        <!-- Add more tech items as needed -->
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#publications'"
-      />
-    </section>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <section id="publications">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Publications</h1>
-      <div class="publications-container">
-        <div class="publication-item">
-          <h2 class="publication-title"> Perry - Building Generalist Reasoning Models Through Supervised Fine Tuning on STEM Dataset</h2>
-          <p>Pending Publication</p>
-          <a href="" target="_blank">Read more</a>
+    <!-- Feather Icons for modern, clean icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* CSS Reset and Variables */
+        :root {
+            --primary-color: #007BFF;
+            --primary-hover-color: #0056b3;
+            --secondary-color: #6c757d;
+            --background-color: #f8f9fa;
+            --surface-color: #ffffff;
+            --text-color: #212529;
+            --light-text-color: #495057;
+            --border-color: #dee2e6;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        /* General Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 6rem 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title p {
+            color: var(--light-text-color);
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition-speed);
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover-color);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-secondary:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Header & Navigation */
+        #main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            transition: box-shadow 0.3s ease;
+        }
+        
+        #main-header.scrolled {
+             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width var(--transition-speed);
+        }
+        
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        /* Profile Section */
+        #profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding-top: 70px;
+        }
+        
+        .profile-content {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .profile-img-container {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 0 10px rgba(0, 123, 255, 0.1);
+        }
+        
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-text {
+            max-width: 600px;
+        }
+
+        .profile-text .text-p1 {
+            color: var(--light-text-color);
+            font-size: 1.2rem;
+        }
+
+        .profile-text .title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .profile-text .text-p2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+        }
+        
+        .btn-container {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .socials-container {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .social-icon {
+            color: var(--text-color);
+            transition: var(--transition-speed);
+        }
+        
+        .social-icon:hover {
+            color: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        /* About Section */
+        #about .container {
+            display: flex;
+            justify-content: center;
+        }
+        .about-content {
+            background-color: var(--surface-color);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            max-width: 900px;
+            text-align: center;
+        }
+
+        /* Card-based layout for Education, Experience, Projects */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Education Card */
+        .education-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        .education-icon {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+        .education-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        .education-card p {
+            color: var(--light-text-color);
+            font-size: 0.95rem;
+        }
+
+        /* Experience Card */
+        .experience-card .company-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .experience-card .experience-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+        .experience-card .company {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.1rem;
+        }
+        .experience-card .role {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .experience-card .date {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .experience-card ul {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+        .experience-card li {
+            margin-bottom: 0.5rem;
+            color: var(--light-text-color);
+        }
+
+        /* Project Card */
+        .project-card .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        .project-card h3 { font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem; }
+        .project-card p { color: var(--light-text-color); margin-bottom: 1.5rem; flex-grow: 1; }
+        .project-card .btn-container { margin-top: auto; }
+        .extra-project {
+            display: none;
+        }
+        .extra-project.show {
+            display: flex;
+        }
+        .view-more-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        /* Skills Section */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .skill-item {
+            background: var(--surface-color);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: var(--shadow);
+            transition: var(--transition-speed);
+        }
+        
+        .skill-item:hover {
+            transform: scale(1.05);
+            color: var(--primary-color);
+        }
+        
+        .skill-item img {
+            width: 32px;
+            height: 32px;
+        }
+
+        /* Publications Section */
+        .publication-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .publication-item {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+        
+        .publication-item h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .publication-item p { color: var(--secondary-color); margin-bottom: 1rem; }
+        .publication-item a { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        
+        /* Contact Section */
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            background: var(--surface-color);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: var(--transition-speed);
+        }
+        
+        .contact-info-item a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #e9ecef;
+        }
+        
+        .footer-nav {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        
+        .footer-nav a {
+            color: var(--light-text-color);
+            text-decoration: none;
+            transition: var(--transition-speed);
+        }
+        
+        .footer-nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 992px) {
+            .profile-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-img-container {
+                width: 250px;
+                height: 250px;
+            }
+            .profile-text .title {
+                font-size: 2.8rem;
+            }
+             .btn-container, .socials-container {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: var(--surface-color);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 3rem;
+                transition: right 0.4s ease-in-out;
+            }
+            .nav-links.open {
+                right: 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+
+            section { padding: 4rem 0; }
+            .profile-text .title { font-size: 2.2rem; }
+            .section-title h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#profile" class="logo">Balaaditya Mukundan</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i data-feather="menu"></i>
+                </div>
+            </nav>
         </div>
-        <div class="publication-item">
-          <h2 class="publication-title">Analysis of the Effect of Adversarial Training in Defending EfficientNet-B0 Model from DeepFool Attack</h2>
-          <p>IEEE - 2023 3rd International Conference on Intelligent Communication and Computational Techniques (ICCT) · Mar 27, 2023.</p>
-          <a href="https://ieeexplore.ieee.org/document/10075774" target="_blank">Read more</a>
-        </div>
-        <!-- Add more publication items as needed -->
-      </div>
-    </section>
+    </header>
+
+    <main>
+        <!-- Profile Section -->
+        <section id="profile">
+            <div class="container">
+                <div class="profile-content">
+                    <div class="profile-img-container">
+                        <img src="assets/bala_photo.png" alt="Balaaditya Mukundan Profile Picture" />
+                    </div>
+                    <div class="profile-text">
+                        <p class="text-p1">Hello, I'm</p>
+                        <h1 class="title">Balaaditya Mukundan</h1>
+                        <p class="text-p2">MS in CS Student at UC San Diego</p>
+                        <div class="btn-container">
+                            <a href="#contact" class="btn btn-primary">Contact Me</a>
+                            <!-- Link to your actual resume file -->
+                            <a href="#" class="btn btn-secondary">Download CV</a>
+                        </div>
+                        <div class="socials-container">
+                             <a href="https://linkedin.com/in/balaaditya-mukundan" target="_blank" class="social-icon"><i data-feather="linkedin" width="32" height="32"></i></a>
+                             <a href="https://github.com/Balaaditya8" target="_blank" class="social-icon"><i data-feather="github" width="32" height="32"></i></a>
+                             <a href="https://huggingface.co/Balaaditya" target="_blank" class="social-icon"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="32" height="32" alt="Hugging Face"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="section-title">
+                        <p>Get To Know More</p>
+                        <h1>About Me</h1>
+                    </div>
+                    <p>
+                        Welcome! I’m Balaaditya, currently pursuing an MS in Computer Science and Engineering at UC San Diego. I’m passionate about machine learning and artificial intelligence, with a keen interest in full-stack development to build robust, end-to-end systems.
+                        <br><br>
+                        My work spans large language models, diffusion models, and computer vision, utilizing technologies like Flask, Flutter, and FastAPI. My goal is to integrate diverse technologies to build innovative and impactful solutions in the fields of Generative AI and Computer Vision.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <div class="container">
+                <div class="section-title">
+                    <p>My Formal Background</p>
+                    <h1>Education</h1>
+                </div>
+                <div class="card-grid">
+                    <div class="card education-card">
+                        <img src="assets/UCSD_Seal.png" alt="UC San Diego Logo" class="education-icon"/>
+                        <div>
+                            <h3>Master of Science in Computer Science</h3>
+                            <p>University of California San Diego</p>
+                            <p>2024 - 2026</p>
+                        </div>
+                    </div>
+                    <div class="card education-card">
+                        <img src="assets/ceg.png" alt="CEG, Anna University Logo" class="education-icon"/>
+                        <div>
+                            <h3>Bachelor of Engineering in Computer Science</h3>
+                            <p>College of Engineering Guindy, Anna University</p>
+                            <p>2020 - 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                 <div class="section-title">
+                    <p>My Professional Journey</p>
+                    <h1>Experience</h1>
+                </div>
+                <div class="card-grid">
+                    <div class="card experience-card">
+                        <div class="company-header">
+                            <img src="assets/ceg.png" alt="CEG Logo" class="experience-logo"/>
+                            <div>
+                                <h3 class="company">College of Engineering Guindy, Anna University</h3>
+                                <p class="role">Generative AI Research Intern</p>
+                            </div>
+                        </div>
+                        <p class="date">Aug. 2023 - Dec. 2023</p>
+                        <ul>
+                            <li>Developed and fine-tuned a Large Language Model based on Meta's Llama-2 architecture.</li>
+                            <li>Trained the model on a high-quality STEM dataset, achieving superior results with cost-effective methods.</li>
+                            <li>Benchmarked performance, demonstrating that our model outperformed several open-source LLMs.</li>
+                        </ul>
+                    </div>
+                    <div class="card experience-card">
+                        <div class="company-header">
+                            <img src="assets/amazon.png" alt="Amazon Logo" class="experience-logo"/>
+                            <div>
+                                <h3 class="company">Amazon</h3>
+                                <p class="role">Software Development Engineer Intern</p>
+                            </div>
+                        </div>
+                        <p class="date">June 2023 - Aug. 2023</p>
+                        <ul>
+                            <li>Automated key developer operations in two internal apps, reducing manual steps by 50%+ and cutting processing time.</li>
+                            <li>Built 2 internal-facing web tools using Ruby on Rails and HAML, now adopted by 20+ developers to streamline workflows.</li>
+                            <li>Designed and integrated 5 REST APIs using Spring Boot, with SQL in one service and DynamoDB in another.</li>
+                            <li>Built extensive test suites using Mockito and JOOQ, improving code reliability and raising test coverage to 80%+.</li>
+                            <li>Authored and presented low-level design documents, approved and integrated into production systems.</li>
+                        </ul>
+                    </div>
+                    <div class="card experience-card">
+                         <div class="company-header">
+                            <img src="assets/ceg.png" alt="CEG Logo" class="experience-logo"/>
+                            <div>
+                                <h3 class="company">College of Engineering Guindy, Anna University</h3>
+                                <p class="role">Machine Learning Research Intern</p>
+                            </div>
+                        </div>
+                        <p class="date">Nov. 2022 - May 2023</p>
+                        <ul>
+                            <li>Published research at IEEE ICCT 2023 on enhancing robustness of medical imaging models against adversarial attacks.</li>
+                            <li>Identified vulnerabilities of the EfficientNet-B0 model under DeepFool adversarial attack across 2 medical imaging datasets.</li>
+                            <li>Applied adversarial training defenses, restoring accuracy to 98.1% and 99.3% post-attack on the two datasets.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-title">
+                    <p>Browse My Recent Work</p>
+                    <h1>Projects</h1>
+                </div>
+                <div class="card-grid">
+                    <!-- Initially Visible Projects -->
+                    <div class="card project-card">
+                        <img src="assets/voc.png" alt="Voice of Customer Platform" class="project-img"/>
+                        <h3>Voice of Customer (VoC) Platform</h3>
+                        <p>Built an event-driven system processing 10K+ daily customer comments with Dockerized microservices. Features an AI pipeline for sentiment/topic analysis and a real-time Streamlit dashboard for actionable insights.</p>
+                        <div class="btn-container">
+                             <a href="https://github.com/Balaaditya8/Voice-of-Customer/blob/main/voc.gif" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="assets/sober.png" alt="Cloud-Native Intoxication Detection" class="project-img"/>
+                        <h3>Cloud-Native Intoxication Detection</h3>
+                        <p>Architected a serverless ML platform on Azure to predict intoxication from phone accelerometer data in real-time, featuring streaming ETL pipelines and a live React-based monitoring dashboard.</p>
+                        <div class="btn-container">
+                             <a href="https://github.com/gokulg02/Azure-Cloud-Based-Intoxication-Monitoring-with-IoT-and-ML" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=Second+Brain" alt="Second Brain Knowledge Management System" class="project-img"/>
+                        <h3>Second Brain - Knowledge Management</h3>
+                        <p>A full-stack knowledge system with a Flask backend and React frontend. Implemented RAG-based semantic search and local LLM integration (Ollama) for private, context-aware Q&A over your personal notes.</p>
+                        <div class="btn-container">
+                             <a href="https://github.com/Balaaditya8/second-brain" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://placehold.co/600x400/17A2B8/FFFFFF?text=Code+Explainer" alt="Multi-Agent Code Explainer" class="project-img"/>
+                        <h3>Multi-Agent Code Explainer</h3>
+                        <p>Engineered a VSCode extension for instant, highlight-and-click code explanations powered by on-device LLMs. A tree-structured memory improves accuracy and reduces redundant queries.</p>
+                         <div class="btn-container">
+                             <a href="https://github.com/Balaaditya8/Multi-Agent-Coder" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Extra Projects (Initially Hidden) -->
+                     <div class="card project-card extra-project">
+                        <img src="assets/rag-doc.png" alt="ViVid Project" class="project-img"/>
+                        <h3>Local RAG-DOC-Chat</h3>
+                        <p>This project focuses on developing a <strong>document-based Question Answering system</strong> using <strong>Local LLMs</strong> (Large Language Models). It allows users to upload documents (e.g., PDFs) and ask questions, with the system providing accurate and concise answers based on the document's content.</p>
+                        <div class="btn-container">
+                            <a href="https://github.com/Balaaditya8/Local-RAG-DOC-Chat" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="card project-card extra-project">
+                        <img src="assets/rag-doc.png" alt="ViVid Project" class="project-img"/>
+                        <h3>RAG-DOC-Chat</h3>
+                        <p>This project focuses on developing a <strong>document-based Question Answering system</strong> using the <strong>Groq API</strong> and <strong>Retrieval-Augmented Generation (RAG)</strong>. It allows users to upload documents (e.g., PDFs) and ask questions, with the system providing accurate and concise answers based on the document's content.</p>
+                        <div class="btn-container">
+                            <a href="https://github.com/Balaaditya8/RAG-DOC-Chat" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="card project-card extra-project">
+                        <img src="assets/TAVGEN.png" alt="ViVid Project" class="project-img"/>
+                        <h3>TAVGen - Text-to-AudioVisual Generation</h3>
+                        <p>This project focuses on developing a custom Text-Code-Video methodology to streamline video generation by utilizing code intermediation with large language models (LLMs). The main objective is to reduce the computational complexity involved in creating educational videos, particularly for math and physics concepts.</p>
+                        <div class="btn-container">
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="card project-card extra-project">
+                        <img src="assets/AR.jpg" alt="ViVid Project" class="project-img"/>
+                        <h3>ViVid: Voice-to-Video in AR</h3>
+                        <p>A system leveraging Stable Diffusion and Whisper to convert voice inputs into video outputs, with a Flutter app prototype for displaying generated videos in Augmented Reality.</p>
+                        <div class="btn-container">
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card project-card extra-project">
+                        <img src="assets/malaria.png" alt="Malaria Detection Project" class="project-img"/>
+                        <h3>Automated Malaria Detection</h3>
+                        <p>A deep learning approach using CNNs to automate the detection of malaria-infected red blood cells from microscopic images, enhancing diagnostic speed and accuracy.</p>
+                        <div class="btn-container">
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-more-container">
+                    <button id="view-more-btn" class="btn btn-primary">View More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <div class="section-title">
+                    <p>Explore My</p>
+                    <h1>Skills</h1>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item"><img src="assets/python.webp" alt="Python"><span>Python</span></div>
+                    <div class="skill-item"><img src="assets/java.webp" alt="Java"><span>Java</span></div>
+                    <div class="skill-item"><img src="assets/cpp.png" alt="C++"><span>C++</span></div>
+                    <div class="skill-item"><img src="assets/pytorch.png" alt="Pytorch"><span>Pytorch</span></div>
+                    <div class="skill-item"><img src="https://placehold.co/64x64/f8f9fa/000000?text=TF" alt="Tensorflow"><span>Tensorflow</span></div>
+                    <div class="skill-item"><img src="assets/flask.webp" alt="Flask"><span>Flask</span></div>
+                    <div class="skill-item"><img src="assets/fastapi.png" alt="FastAPI"><span>FastAPI</span></div>
+                    <div class="skill-item"><img src="assets/react.png" alt="React"><span>React.js</span></div>
+                    <div class="skill-item"><img src="assets/flutter.jpg" alt="Flutter"><span>Flutter</span></div>
+                    <div class="skill-item"><img src="assets/aws2.png" alt="AWS"><span>AWS</span></div>
+                    <div class="skill-item"><img src="assets/azure.webp" alt="AWS"><span>Azure</span></div>
+                    <div class="skill-item"><img src="assets/docker.png" alt="AWS"><span>Docker</span></div>
+                    <div class="skill-item"><img src="assets/redis.png" alt="AWS"><span>Redis</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <div class="container">
+                <div class="section-title">
+                    <p>My Published Work</p>
+                    <h1>Publications</h1>
+                </div>
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <h3>Perry - Building Generalist Reasoning Models Through Supervised Fine Tuning on STEM Dataset</h3>
+                        <p>Pending Publication</p>
+                        <a href="#">Read More &rarr;</a>
+                    </div>
+                    <div class="publication-item">
+                        <h3>Analysis of the Effect of Adversarial Training in Defending EfficientNet-B0 Model from DeepFool Attack</h3>
+                        <p>IEEE - 2023 3rd International Conference on Intelligent Communication and Computational Techniques (ICCT)</p>
+                        <a href="https://ieeexplore.ieee.org/document/10075774" target="_blank">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="section-title">
+                        <p>Get in Touch</p>
+                        <h1>Contact Me</h1>
+                    </div>
+                     <div class="contact-info-item">
+                        <i data-feather="mail"></i>
+                        <a href="mailto:balaaditya8@gmail.com">balaaditya8@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <i data-feather="linkedin"></i>
+                        <a href="https://www.linkedin.com/in/balaaditya-mukundan" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:balaaditya8@gmail.com">balaaditya8@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/balaaditya-mukundan">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#tech-stack">Skills</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                </ul>
+            </nav>
+            <p>Copyright &#169; 2025 Balaaditya Mukundan. All Rights Reserved.</p>
         </div>
-      </nav>
-      <p>Copyright &#169; 2024 Balaaditya Mukundan. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
-  </body>
+
+    <script>
+        // Immediately replace feather icons with SVG
+        feather.replace();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('main-header');
+            const navLinksContainer = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const hamburger = document.querySelector('.hamburger');
+            const sections = document.querySelectorAll('section');
+
+            // --- Header Scroll Effect ---
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // --- Hamburger Menu Toggle ---
+            hamburger.addEventListener('click', () => {
+                navLinksContainer.classList.toggle('open');
+            });
+            
+            // --- Close menu when a link is clicked ---
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinksContainer.classList.contains('open')) {
+                        navLinksContainer.classList.remove('open');
+                    }
+                });
+            });
+            
+            // --- Active Nav Link Highlighting on Scroll ---
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.6
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Remove active class from all nav links
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        
+                        // Add active class to the corresponding nav link
+                        const id = entry.target.getAttribute('id');
+                        const activeLink = document.querySelector(`.nav-links a[href="#${id}"]`);
+                        if (activeLink) {
+                            activeLink.classList.add('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            // --- Animate Sections on Scroll ---
+            const sectionObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe all sections
+            sections.forEach(section => {
+                observer.observe(section);
+                sectionObserver.observe(section);
+            });
+
+            // --- "View More" Projects Logic ---
+            const viewMoreBtn = document.getElementById('view-more-btn');
+            const extraProjects = document.querySelectorAll('.extra-project');
+
+            if (viewMoreBtn && extraProjects.length > 0) {
+                viewMoreBtn.addEventListener('click', () => {
+                    extraProjects.forEach(project => {
+                        project.classList.toggle('show');
+                    });
+
+                    if (viewMoreBtn.textContent === 'View More') {
+                        viewMoreBtn.textContent = 'View Less';
+                    } else {
+                        viewMoreBtn.textContent = 'View More';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
 </html>
+
